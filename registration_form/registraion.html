@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Registration form
+    </title>
+</head>
+
+<body>
+    
+    <form>
+        <fieldset>
+            <legend><h3>Student Registration Form</h3></legend>
+       
+        <table>
+            <tbody>
+                <tr>
+                    <td><label for="fname">First Name</label></td>
+                    <td><input type="text" id="fname" placeholder="write first name" autofocus required></td>
+                </tr>
+                <tr>
+                    <td><label for="mname">Middle Name</label></td>
+                    <td><input type="text" id="mname" placeholder="write middle name"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="lname">Last Name</label>
+                    </td>
+                    <td><input type="text" id="lname" placeholder="write last name"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email">Email</label>
+                    </td>
+                    <td><input type="email" id="Email" placeholder="andy@gmail.com" required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="password">Password</label>
+                    </td>
+                    <td><input type="password" id="password" placeholder="password"></td>
+                </tr>
+
+
+                <tr>
+                    <td><label>Select Graduation</label></td>
+
+                    <td>
+
+                        <select>
+                            <option>B.tech</option>
+                            <option>M.tech</option>
+                            <option>BCA</option>
+                            <option>MCA</option>
+                            <option>MBA</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="per/gr.">Percentage/Grade</label>
+                    </td>
+                    <td><input type="number" id="per/gr." placeholder="Percentage/Grade" required pattern="[0-9%]"></td>
+                </tr>
+                <tr>
+                    <td><label>Training with Placement</label></td>
+                    <td>
+                        <input type="checkbox" id="complementry" checked>
+                        <label><strong> Courses: DB,Agile,JIRA,GIT,Mock Interviews </strong></label>
+                        <br>
+
+                        <input type="checkbox" id="Angular">
+                        <label for="angular">Angular with HTML CSS and TS</label><br>
+
+
+                        <input type="checkbox">
+                        <label>Complete Java</label>
+                        <br>
+
+                        <input type="checkbox">
+                        <label>C# .Net</label>
+                        <br>
+
+                        <input type="checkbox">
+                        <label>Manual And automation testing</label>
+                        <br></td>
+                </tr>
+                <tr>
+                    <td><label for="intr_trainings">In future interested For Training</label></td>
+                    <td>
+                        <select id="intr_trainings">
+                            <optgroup label="Frontend Development">
+                                <option>Angular</option>
+                                <option>ReactJs</option>
+                                <option>Vue.Js</option>
+                            </optgroup>
+                            <optgroup label="backend developer">
+                                <option>Complete JAVA</option>
+                                <option>C# .NET</option>
+                            </optgroup>
+                            <optgroup label="Fullstack Developer">
+                                <option>Angular + Java</option>
+                                <option>Angular + C# .NET</option>
+                                <option>ReactJs + Java</option>
+                                <option>ReactJs + C# .NET</option>
+                            </optgroup>
+                        </select>
+                </tr>
+                <tr>
+                    <td>Work Status</td>
+                    <td>
+                        <input type="radio" name="status">
+                        <label>Fresher</label>
+                        <input type="radio" name="status">
+                        <label>Experienced</label>
+
+                    </td>
+                <tr>
+                    <td><label>Select hobbies</label></td>
+                    <td>
+                        <input List="hobbies">
+                        <datalist id="hobbies">
+                            <option value="Reading"></option>
+                            <option value="Dancing"></option>
+                            <option value="Programing"></option>
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="dob">Date of Birth</label>
+                    </td>
+                    <td><input type="date" id="dob" min=1975-01-01 max=2015-01-01 required></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Contactno.">Contact Details</label>
+                    </td>
+                    <td>
+                        <select>
+                            <option select>+91</option>
+                            <option>+44</option>
+                            <option>+04</option>
+                            <option>+11</option>
+                            <input type="number" id="number" placeholder="Contact" maxlength="10">
+                    </td>
+                    </select>
+                </tr>
+                <tr>
+                    <td>Select Gender</td>
+                    <td>
+                        <input type="radio" name="gender">
+                        <label>Male</label>
+                        <input type="radio" name="gender">
+                        <label>Female</label>
+                        <input type="radio" name="gender">
+                        <label>Transgender</label>
+                    </td>
+                <tr>
+                    <td>
+                        <label for="cname">Country Name</label>
+                    </td>
+                    <td><input type="text" id="cname" value="India" readonly></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Pin">Pin Code</label>
+                    </td>
+                    <td><input type="number" id="pin" maxlength="6"></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Address</label>
+                    </td>
+                    <td><textarea cols="21" rows="7"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="Photo">Select Profile Photo</label>
+                    </td>
+                    <td><input type="file"></textarea></td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="certificate">Select Certificates</label>
+                    </td>
+                    <td><input type="file" id="certificates" multiple></textarea></td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td><input type="Reset"><input type="Submit"></td>
+                </tr>
+
+            </tbody>
+        </table>
+    </fieldset>
+    </form>
+
+
+
+</body>
+
+</html>
